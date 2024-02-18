@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+body {
+ margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main {
+   background-image: url('file:///C:/Users/megha/Downloads/group-three-young-good-looking-startupers-sitting-light-coworking-space-talking-about-future-project-looking-through-design-examples-digital-tablet-friends-smiling-talking-about-work.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+   justify-content: center;
+    background-color: #f0f2f5;
+position:relative;
+overflow: hidden;
+}
+.main::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('file:///C:/Users/megha/Downloads/group-three-young-good-looking-startupers-sitting-light-coworking-space-talking-about-future-project-looking-through-design-examples-digital-tablet-friends-smiling-talking-about-work.jpg');
+    background-size: cover;
+    background-position: center;
+
+
+filter: grayscale(50%); 
+    z-index: 1;
+
+}
+
+
+@keyframes zoomIn {
+    from {
+        opacity: 0;
+        transform: scale(0.5); /* Start from half the size */
+    }
+    to {
+        opacity: 1;
+        transform: scale(1); /* Scale to normal size */
+    }
+}
+
+
+.container {
+    background-color:rgba(255, 255, 255, 0.7);
+z-index: 1;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 400px;
+    align-items: center;
+    border: none;
+    border-radius: 5px;
+    box-shadow:0 0 10px rgba(0,0,0,0.2);
+    gap: 10px;
+  animation: zoomIn 0.7s ease-out forwards;
+}
+.login{
+    font-size: 1.2rem;
+    margin: 20px 0 10px 0;
+}
+input{
+    width:85%;
+    height:50px;
+    border: 2px solid rgba(0,0,0,0.1);
+    border-radius:5px;
+    font-size: 15px;
+    padding-left:20px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.5);
+    outline-style: none;
+}
+button{
+    width: 90%;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    background-color: #1877f2;
+    color: white;
+    font-size: large;
+    font-weight: bold;
+}
+a{
+    text-decoration: none;
+    font-size: 14px;
+    margin: 10px;
+    color:#1877f2;
+}
+a:hover{
+    text-decoration: Underline;
+}
+.new-account{
+    width: 50%;
+    background-color:#42b72a;
+    font-size: 16px;
+    margin: 10px 0 20px 0;
+}
+.login-btn:hover{
+    background-color: #1366d1;
+}
+.new-account:hover{
+    background-color:#3ba327;
+}
+.style{
+    position: relative;
+    text-align: center;
+    font-size: 12px;
+    color: rgba(0,0,0,0.5);
+}
+.style::before{
+    content: " ";
+    display: block;
+    height: 0.9px;
+    width: 170px;
+    position: absolute;
+    top: 50%;
+    left: 25px;
+    background-color: rgba(0,0,0,0.2);
+}
+.style::after{
+    content: " ";
+    display: block;
+    height: 0.9px;
+    width: 170px;
+    position: absolute;
+    top: 50%;
+    right: 25px;
+    background-color: rgba(0,0,0,0.2);
+}
+</style>
+    <title>online peer group login</title>
+</head>
+<body>
+    <div class="main">
+        
+        <div class="container">
+            <span class="login">Login to DigiLearn</span>
+            <input type="email" name="email" placeholder="Email address or phone number">
+            <input type="password" name="pass" id="pass" placeholder="Password">
+            <button class="login-btn">Login</button>
+            <a href="Account.html">Forgotten account?</a>
+            <div class="style">or</div>
+            <button class="new-account">Create Account</button>
+        </div>
+    </div>
+</body>
+</html>
+ 
+ 
